@@ -1,0 +1,6 @@
+---
+- name: Deploy web servers
+  hosts: web
+  roles:
+    - { role: 'common'}
+    - { role: 'hostname'}

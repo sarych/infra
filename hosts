@@ -1,0 +1,2 @@
+lf-app1-s ansible_host=192.168.64.5 ansible_user=root
+lf-app1-p ansible_host=192.168.64.4 ansible_user=root
