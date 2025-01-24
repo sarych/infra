@@ -4,12 +4,13 @@
   gather_facts: false
   tasks:
     - name: Ensure roles directory exists
-      file:
+      ansible.builtin.file:
         path: "roles"
         state: directory
+        mode: '0755'
 
     - name: Clone the git repository into the roles directory
-      git:
+      ansible.builtin.git:
         key_file: ~/.ssh/github
         accept_hostkey: true
         repo: "git@github.com:sarych/ansible-roles.git"
