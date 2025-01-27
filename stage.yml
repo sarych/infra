@@ -3,3 +3,4 @@
   hosts: web
   roles:
     - { role: 'common'}
+    - { role: 'docker'}

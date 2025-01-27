@@ -3,8 +3,12 @@
   hosts: web
   roles:
     - { role: 'common'}
+    - { role: 'docker'}
+
 
 - name: Deploy db servers
   hosts: db
   roles:
     - { role: 'common'}
+    - { role: 'docker'}
+

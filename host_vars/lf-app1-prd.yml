@@ -1,0 +1,4 @@
+packages:
+  - mc
+  - htop
+  - rsync
